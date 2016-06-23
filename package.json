@@ -16,7 +16,8 @@
     "url": "https://github.com/jamacon36/festManger/issues"
   },
   "homepage": "https://github.com/jamacon36/festManger#readme",
-  "devDependencies": {
-    "materialize-css": "^0.97.6"
+  "dependencies": {
+    "materialize-css": "^0.97.6",
+    "mongodb": "^2.1.18"
   }
 }
