@@ -1,0 +1,22 @@
+{
+  "name": "fest-manager",
+  "version": "0.0.1",
+  "description": "Alpha version of node based festival manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamacon36/festManger.git"
+  },
+  "author": "James Macon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamacon36/festManger/issues"
+  },
+  "homepage": "https://github.com/jamacon36/festManger#readme",
+  "devDependencies": {
+    "materialize-css": "^0.97.6"
+  }
+}
