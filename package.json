@@ -19,5 +19,8 @@
   "dependencies": {
     "materialize-css": "^0.97.6",
     "mongodb": "^2.1.18"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
