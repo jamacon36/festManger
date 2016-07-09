@@ -1,6 +1,20 @@
 var http = require('http');
 var routes = require('./routes.js');
 
+//Set Server Info and export to module
+function setInfo (url = '127.0.0.1', protocol = 'http', port = '1337') 
+{
+   var self = this;
+   self.url = url;
+   self.protocol = protocol;
+   self.port = port;
+   return self;
+}
+
+var info = setInfo();
+
+module.exports.info = info;
+
 //Start Server
 module.exports.startEngine = function () 
 {
@@ -9,8 +23,8 @@ module.exports.startEngine = function ()
         http.createServer(function (req, res) 
         {
             routes.trafficCop(req, res);
-        }).listen(1337, '127.0.0.1');
-        console.log('Server running @ http://127.0.0.1:1337/');
+        }).listen(info.port, info.url);
+        console.log('Server running @ ' + info.protocol + '//' + info.url + ':' + info.port);
     }
     catch (err)
     {
